@@ -7,6 +7,11 @@
 .title .star{
     padding-bottom: 10px;
 }
+
+.small-wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+}
 /* END COMMON */
 
 /* HEADER */
@@ -35,6 +40,10 @@ header .header-menu{
 /* END HEADER */
 
 /* MAIN */
+section{
+    padding: 30px 0;
+}
+
 main .title{
     text-align: center;
 }
@@ -43,9 +52,10 @@ main .title h2{
     text-transform: uppercase;
 }
 
-.img-wrapper{
+/* Section Portfolio */
+#portfolio .img-wrapper{
     margin-bottom: 10px;
-    
+
     /* TEST */
     background-color: aqua;
 }
