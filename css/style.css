@@ -60,3 +60,26 @@ main .title h2{
     background-color: aqua;
 }
 /* END MAIN */
+
+/* FOOTER */
+footer{
+    background-color: #3a546d;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer h4{
+    text-transform: uppercase;
+}
+footer .social a{
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+/* END FOOTER */
