@@ -29,11 +29,19 @@
                         <div class="text-right">
                             <div class="row">
                                 <!-- Start nav menu -->
-                                <div class="hidden-xs col-sm-12">Menu</div>
+                                <div class="hidden-xs col-sm-12">
+                                    <div class="text-right">
+                                        <ul class="menu list-unstyled list-inline">
+                                            <li><a href="#">Portfolio</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 <!-- Start nav menu -->
 
                                 <!-- Start Burger toggle -->
-                                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                                <div class="col-xs-12 visible-xs-block">
                                     <div class="burger-toggle"><i class="fas fa-bars"></i></div>
                                 </div>
                                 <!-- End Burger toggle -->
@@ -47,7 +55,7 @@
         <!-- End Nav -->
 
         <!-- Start Banner -->
-        <div class="banner green-section">
+        <div class="banner green-section section-padd">
             <div class="container">
                 <div class="teaser text-center">
                     <!-- Start Title -->
@@ -67,7 +75,7 @@
     <!-- START MAIN -->
     <main>
         <!-- Start Portfolio Section -->
-        <section id="portfolio">
+        <section id="portfolio" class="section-padd">
             <div class="container">
                 <!-- Start Title -->
                 <div class="row">
@@ -134,7 +142,7 @@
         <!-- End Portfolio Section -->
 
         <!-- Start About Section -->
-        <section id="about" class="green-section">
+        <section id="about" class="green-section section-padd">
             <div class="small-wrapper">
                 <div class="container-fluid">
                     <!-- Start Title -->
@@ -171,7 +179,7 @@
         <!-- End About Section -->
 
         <!-- Start Contact me Section -->
-        <section id="contact">
+        <section id="contact" class="section-padd">
             <div class="small-wrapper">
                 <div class="container-fluid">
                     <!-- Start Title -->
@@ -203,7 +211,8 @@
 
     <!-- START FOOTER -->
     <footer class="text-center">
-        <div class="footer-top">
+        <!-- Start Footer Top -->
+        <div class="footer-top section-padd">
             <div class="container">
                 <div class="row">
                     <!-- Start Column -->
@@ -240,10 +249,15 @@
                 </div>
             </div>
         </div>
+        <!-- End Footer Top -->
 
-        <div class="copyright">
-            Copyright <i class="far fa-copyright"></i> Your Website 2019
+        <!-- Start Footer Bottom -->
+        <div class="copyright section-padd">
+            <div class="container">
+                Copyright <i class="far fa-copyright"></i> Your Website 2019
+            </div>
         </div>
+        <!-- End Footer Bottom -->
     </footer>
     <!-- END FOOTER -->
 
