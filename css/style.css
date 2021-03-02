@@ -8,15 +8,37 @@
     padding: 30px 0;
 }
 
-.title .star{
-    margin: 10px 0;
-    font-size: 20px;
-}
-
 .small-wrapper{
     max-width: 900px;
     width: 70%;
     margin: 0 auto;
+}
+
+/* Star */
+.title .star{
+    margin: 10px 0;
+    font-size: 20px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.title .star::before{
+    content: "";
+    width: 10%;
+    border-bottom: 2px solid;
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 53%;
+}
+.title .star::after{
+    content: "";
+    width: 10%;
+    border-bottom: 2px solid;
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 37%;
 }
 /* END COMMON */
 
@@ -84,6 +106,22 @@ main .title h2{
     border-left: 0;
     box-shadow: none;
     border-radius: 0;
+}
+
+#contact-form input::placeholder {/* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+#contact-form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+  
+#contact-form input::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+}
+#contact-form textarea::placeholder {
+    color: black;
+    opacity: 1;
 }
 /* END MAIN */             
 
