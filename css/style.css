@@ -77,7 +77,14 @@ main .title h2{
 }
 
 /* Section Contact */
-
+#contact-form input,
+#contact-form textarea{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
 /* END MAIN */             
 
 /* FOOTER */
