@@ -62,6 +62,22 @@ main .title h2{
 #portfolio .box-img{
     margin-top: 30px;
 }
+
+/* Section About */
+#about .button_container{
+    padding-top: 20px;
+}
+#about .button_container .download-btn{
+    border: 1px solid #fff;
+    color: #fff;
+}
+#about .button_container .download-btn:hover{
+    background-color: #fff;
+    color: #1abc9c;
+}
+
+/* Section Contact */
+
 /* END MAIN */             
 
 /* FOOTER */
