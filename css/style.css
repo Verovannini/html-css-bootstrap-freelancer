@@ -18,27 +18,28 @@
 .title .star{
     margin: 10px 0;
     font-size: 20px;
-    vertical-align: middle;
     position: relative;
 }
-
-.title .star::before{
-    content: "";
-    width: 10%;
-    border-bottom: 2px solid;
-    display: block;
-    position: absolute;
-    top: 40%;
-    right: 53%;
+.title .star i{
+    padding: 0 10px;
 }
+
+/* Per inserire le linee non usare absolute ma vertical align */
+.title .star::before,
 .title .star::after{
-    content: "";
+    /* content: "";
     width: 10%;
     border-bottom: 2px solid;
     display: block;
     position: absolute;
     top: 40%;
-    right: 37%;
+    right: 53%; */
+
+    content: "";
+    width: 10%;
+    display: inline-block;
+    border-bottom: 2px solid;
+    vertical-align: super;
 }
 /* END COMMON */
 
@@ -65,9 +66,10 @@ header .header_nav .menu a{
     text-transform: uppercase;
 }
 
+/* Ottimo modo per non far diventare l'img troppo piccola su xs */
 .banner .img_container img{
-    height: 200px;
-    width: auto;
+    width: 20%;
+    min-width: 100px;
 }
 /* END HEADER */
 
@@ -108,20 +110,19 @@ main .title h2{
     border-radius: 0;
 }
 
-#contact-form input::placeholder {/* Chrome, Firefox, Opera, Safari 10.1+ */
+/* Questo serve per cambiare il colore del placeholder, non si possono mettere tutti insieme con una virgola perchè non funziona */
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {/* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
     opacity: 1; /* Firefox */
 }
-#contact-form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+#contact-form input:-ms-input-placeholder,
+#contact-form textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: black;
 }
-  
-#contact-form input::-ms-input-placeholder { /* Microsoft Edge */
+#contact-form input::-ms-input-placeholder,
+#contact-form textarea::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
-}
-#contact-form textarea::placeholder {
-    color: black;
-    opacity: 1;
 }
 /* END MAIN */             
 
@@ -146,6 +147,7 @@ footer .social a{
     height: 30px;
     width: 30px;
     line-height: 30px;
+    text-align: center;
 }
 
 footer .copyright{
